@@ -63,7 +63,7 @@ preds_final = np.argmax(preds, axis = -1)
 
 matriz = confusion_matrix(y_test, preds_final)
 
-f1 = f1_score(y_test, preds_final, average="macro") #média ponderada da precisão e recordação
+f1 = f1_score(y_test, preds_final, average="macro")
 acc = accuracy_score(y_test, preds_final)
 
 print("accuracy score : %s "% acc)
